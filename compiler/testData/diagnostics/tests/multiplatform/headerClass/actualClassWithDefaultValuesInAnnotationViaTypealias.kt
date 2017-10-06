@@ -7,6 +7,9 @@ expect annotation class Foo2
 expect annotation class Foo3
 expect annotation class Foo4
 expect annotation class Foo5()
+expect annotation class Foo6()
+expect annotation class Foo7()
+expect annotation class Foo8()
 
 @<!NO_CONSTRUCTOR!>Foo1<!>
 fun foo() {}
@@ -40,3 +43,9 @@ actual annotation class Foo2(val p: String = "default")
 actual annotation class Foo3(val a: String = "a", val b: String = "b")
 
 actual annotation class Foo5
+
+actual annotation class Foo6(val a: Int = 0)
+
+actual typealias Foo7 = Bar1
+
+<!NO_ACTUAL_CLASS_MEMBER_FOR_EXPECTED_CLASS!>actual typealias Foo8 = Bar2<!>
