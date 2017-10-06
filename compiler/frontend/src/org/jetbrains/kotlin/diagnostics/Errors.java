@@ -266,6 +266,8 @@ public interface Errors {
     DiagnosticFactory2<KtClassOrObject, CallableMemberDescriptor, List<CallableMemberDescriptor>> DELEGATED_MEMBER_HIDES_SUPERTYPE_OVERRIDE =
             DiagnosticFactory2.create(WARNING, DECLARATION_NAME);
 
+    DiagnosticFactory0<KtDelegatedSuperTypeEntry> INHERITANCE_BY_DELEGATION_IN_EXPECT_CLASS = DiagnosticFactory0.create(ERROR);
+
     DiagnosticFactory0<KtTypeReference> SUPERTYPE_NOT_A_CLASS_OR_INTERFACE = DiagnosticFactory0.create(ERROR);
     DiagnosticFactory0<KtTypeReference> SUPERTYPE_IS_EXTENSION_FUNCTION_TYPE = DiagnosticFactory0.create(ERROR);
     DiagnosticFactory0<KtTypeReference> SUPERTYPE_IS_SUSPEND_FUNCTION_TYPE = DiagnosticFactory0.create(ERROR);

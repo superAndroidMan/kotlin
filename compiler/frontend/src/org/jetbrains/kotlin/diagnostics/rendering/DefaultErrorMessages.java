@@ -377,6 +377,7 @@ public class DefaultErrorMessages {
         MAP.put(DELEGATION_IN_INTERFACE, "Interfaces cannot use delegation");
         MAP.put(DELEGATION_NOT_TO_INTERFACE, "Only interfaces can be delegated to");
         MAP.put(DELEGATED_MEMBER_HIDES_SUPERTYPE_OVERRIDE, "Delegated member ''{0}'' hides supertype override: {1}. Please specify proper override explicitly", COMPACT, commaSeparated(SHORT_NAMES_IN_TYPES));
+        MAP.put(INHERITANCE_BY_DELEGATION_IN_EXPECT_CLASS, "Inheritance by delegation in expected classes is prohibited");
         MAP.put(NO_CONSTRUCTOR, "This class does not have a constructor");
         MAP.put(RESOLUTION_TO_CLASSIFIER, "{2}", NAME, TO_STRING, STRING);
         MAP.put(NOT_A_CLASS, "Not a class");
